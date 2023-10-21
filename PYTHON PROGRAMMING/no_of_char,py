@@ -1,0 +1,9 @@
+file=str(input("ENTER THE NAME OF THE FILE:))
+file2=open(file,"r")
+x=char(input("ENTER A CHARACTER WHOSE COUNT YOU WANTED TO FIND OUT:"))
+c=0
+for i in file2.read():
+    if(i==x):
+      c=c+1
+ file2.close()
+ print("THE NUMBER OF TIMES THE APPEARED IS :",c)     
